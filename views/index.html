@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Combinaisons de mots-clés</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css.map">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+
+</head>
+
+<body class="bg-light">
+    <!--Navbar-->
+    <header>
+        <nav class="navbar-dark navbar-expand-lg bg-dark py-2">
+
+            <div class="container-fluid ms-3 d-flex align-items-center">
+                <div>
+                    <a class="navbar-brand" href="../views/index.html"><img style="width:200px;" src="../img/logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form>
+                        <div class="me-auto d-flex flex-row text-white">
+                            <div class="me-3">
+                                <label>Fabriquant</label> :
+                                <input style="width:150px;" id="brand" type="text" name="brand" placeholder="ex : Nintendo">
+                            </div>
+
+                            <div class="me-3">
+                                <label>Nom du produit</label> :
+                                <input style="width:150px;" id="product" type="text" name="product" placeholder="ex : Nintendo Switch">
+                            </div>
+
+                            <div class="me-3">
+                                <label>Référence</label> :
+                                <input style="width:150px;" id="reference" type="text" name="reference" placeholder="ex : 1528">
+                            </div>
+
+                            <div class="me-3">
+                                <label>Spécification couleur</label> :
+                                <input style="width:150px;" id="specification" type="text" name="specification" placeholder="ex: bleu/rouge">
+                            </div>
+                        </div>
+                        <div class="mt-4 d-flex flex-row text-center justify-content-center align-items-center">
+                            <div class="overflow-auto me-4 mb-2 bg-white" type= text style="height:150px; width:350px;" id="combination" name="combination" rows="5" cols="33">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div>
+                                    <input  type="submit" class="btn btn-light generate mb-3 me-2" style="width:190px;" value="Générer des étiquettes" />
+                                    <button type="button" class="btn btn-light reset mb-3 me-2" style="width:190px;">Effacer tout</button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-light selectAll mb-3 me-2" style="width:190px;">Sélectionner tout</button>
+                                    <button type="button" class="btn btn-light paste mb-3 me-2" style="width:190px;">Copier</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Product section-->
+    <section class="products container p-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!--card-->
+            <div class="col">
+                <a href="#" class="card text-decoration-none text-muted">
+                    <img src="../img/gamecube.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-dark">
+                        <h5 class="card-title">Gamecube</h5>
+                        <ul class="card-text list-unstyled">
+                            <li>Fabriquant : Nintendo</li>
+                            <li>Nom produit : Gamecube</li>
+                            <li>Référence : 1525</li>
+                            <li>Spécification couleur : violette</li>
+                        </ul>
+
+                    </div>
+                </a>
+            </div>
+            <!--card -->
+            <div class="col">
+                <a class="card text-decoration-none text-muted">
+                    <img src="../img/xbox.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-dark">
+                        <h5 class="card-title">Xbox 360</h5>
+                        <ul class="card-text list-unstyled">
+                            <li>Fabriquant : Microsoft</li>
+                            <li>Nom produit : Xbox 360</li>
+                            <li>Référence : 1526</li>
+                            <li>Spécification couleur : blanche</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!--card-->
+            <div class="col">
+                <a class="card text-decoration-none text-muted">
+                    <img src="../img/playstation3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-dark">
+                        <h5 class="card-title">Playstation 3</h5>
+                        <ul class="card-text list-unstyled">
+                            <li>Fabriquant : Sony</li>
+                            <li>Nom produit : Playstation 3</li>
+                            <li>Référence : 1527</li>
+                            <li>Spécification couleur : noire</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!--card-->
+            <div class="col">
+                <a class="card text-decoration-none text-muted">
+                    <img src="../img/nintendoSwitch.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center text-dark">
+                        <h5 class="card-title">Nintendo Switch</h5>
+                        <ul class="card-text list-unstyled">
+                            <li>Fabriquant : Nintendo</li>
+                            <li>Nom produit : Nintendo Switch</li>
+                            <li>Référence : 1528</li>
+                            <li>Spécification couleur : bleue/rouge</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--End of product section-->
+
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js.map"></script>
+    <script src='../js/jquery-3.6.1.min.js'></script>
+    <script src='../js/jquery-3.6.1.min.map'></script>
+    <script src='../js/main.js'></script>
+</body>
+
+</html>
